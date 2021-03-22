@@ -1,7 +1,5 @@
 import csv
-fields = ['Name', 'Branch', 'Year', 'CGPA'] 
-  
-  
+
 # name of csv file 
 filename = "user.csv"
 data = []
@@ -15,9 +13,8 @@ def read_data():
                 data.append(row)
     print(data)
     return 
-        # writing the data rows 
-
-
+        
+# writing the data rows 
 def writeData(uname,mail,password):
 
     for i in data:
@@ -35,6 +32,7 @@ def writeData(uname,mail,password):
 #read_data()
 #writeData("shakiladawd3","feaawad","atshaya123")
 
+# update the data 
 def update(uname,mail,password):
     for i in data:
         if mail == i[1]:
@@ -44,6 +42,7 @@ def update(uname,mail,password):
         writer = csv.writer(file)
         for i in data:
             writer.writerow(i)
+    return 
 
 
             

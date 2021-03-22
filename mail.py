@@ -4,7 +4,7 @@ port = 465  # For SSL
 smtp_server = "smtp.gmail.com"
 sender_email = "shakileash2000@gmail.com"  # Enter your address
 receiver_email = "sirenatechnology@gmail.com"  # Enter receiver address
-password = "vvnurinqqtagonij"
+password = "vvnurinqqtagonij" #Enter app password
 messageConfirm = """\
 Subject: Confirmation mail
 
@@ -15,6 +15,7 @@ Subject: verification mail
 
 This message is to verify your password change your otp is :: """
 
+#Function to send mail
 def send_mail(reciever_mail,msg,flag):
     context = ssl.create_default_context()
     if flag == 0:
